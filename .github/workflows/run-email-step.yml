@@ -1,0 +1,20 @@
+name: Email Step Demo
+
+on:
+  push:
+    # optional: trigger on pushes to any branch
+    branches:
+      - '**'
+  workflow_dispatch: {}   # allows manual run from Actions UI
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: "21f2001408@ds.study.iitm.ac.in"
+        run: |
+          echo "Hello, world!"
+          echo "This step name contains the email 21f2001408@ds.study.iitm.ac.in"
